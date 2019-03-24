@@ -14,7 +14,7 @@ curl -X GET http://example.com/echo/test
 
 ### Explanation
 
-The request will go through the auth service (Nginx that returns 200 and 2 `set-cookie`) and reach the echo server that will return a response as is.
+The request will go through the auth service (Nginx that returns 200 and 2 `set-cookie`) and reach the upstream server(echo) that will return a response as is.
 The retured result is as follows:
 
 ```json
